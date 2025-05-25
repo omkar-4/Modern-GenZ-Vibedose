@@ -1,0 +1,672 @@
+:root {
+	--red: #e22c3c;                /* Default Prefix: None */
+  --red-orange: #e9404b;         /* Default Prefix: None */
+  --orange: #ee6748;             /* Default Prefix: None */
+  --amber: #fa9f50;              /* Default Prefix: None */
+  --yellow: #ffd85e;             /* Default Prefix: None */
+  --lime: #97e768;               /* Default Prefix: None */
+  --mint: #52eea3;               /* Default Prefix: X0 */
+  --cyan: #51e1e9;               /* Default Prefix: 01 */
+  --cool-cyan: #43cfea;          /* Default Prefix: None */
+  --light-blue: #54b6f8;         /* Default Prefix: 02 */
+  --blue: #437cf3;               /* Default Prefix: 03 */
+  --blue-violet: #6f51f4;        /* Default Prefix: None */
+  --violet: #9446f8;             /* Default Prefix: 04 */
+  --purple: #c952ed;             /* Default Prefix: 05 */
+  --magenta: #e54f9b;            /* Default Prefix: 06 */
+  --hot-red: #e3365e;            /* Default Prefix: 07 */
+  --cool-gray: #515768;          /* Default Prefix: XD */
+
+  --coral: #fc7a57;
+  --timberwolf: #e3dbdb;
+
+	--default-text-color: #d0d0d0;
+	--highlight: #fff;
+	--shadow: #0b0c2c;
+
+	--nav-item-weight-hover: bold;
+}
+
+/* Light Theme Specific Properties */
+.theme-light {
+  --contrast-color: var(--shadow);
+  --default-text-color: var(--shadow);
+  --bg-contrast-amount: 10%;
+  --fg-contrast-amount: 30%;
+  --medium-contrast-amount: 60%;
+  --active-contrast-amount: 30%;
+
+  /* Darker Versions of Bright Colors for Light Theme */
+  --yellow: color-mix(in srgb, #ffd85e 90%, var(--shadow));
+  --lime: color-mix(in srgb, #97e768 90%, var(--shadow));
+  --mint: color-mix(in srgb, #45e698 85%, var(--shadow));
+  --cyan: color-mix(in srgb, #13cfd9 85%, var(--shadow));
+  --cool-cyan: color-mix(in srgb, #31bbd7 85%, var(--shadow));
+  --light-blue: color-mix(in srgb, #54b6f8 90%, var(--shadow));
+  --timberwolf: color-mix(in srgb, #909090 90%, var(--shadow));
+}
+
+/* Dark Theme Specific Properties */
+.theme-dark {
+	--contrast-color: var(--highlight);
+	--bg-contrast-amount: 15%;
+	--fg-contrast-amount: 40%;
+	--medium-contrast-amount: 20%;
+	--active-contrast-amount: 10%;
+}
+
+/* Narrower Padding on Desktop*/
+@media only screen and (min-width: 768px) {
+  .nav-file-title,
+  .nav-folder-title {
+    /* padding: 3px 5px 2px 4px !important; */
+    padding-top: 3px !important;
+    padding-right: 5px !important;
+    padding-bottom: 2px !important;
+    padding-left: 15px;
+  }
+}
+
+
+/* ============================ Folder Title Prefixes ============================= */
+
+/* color-mix(in <rectangular-color-space>, <color> <percentage>, <color> <percentage>) */
+
+/* ------------------------------- X0 Prefix -------------------------------- */
+
+/* customizing folder colors */
+.nav-folder-title[data-path^="X0"] {
+	color: var(--mint);
+
+	--nav-item-color-hover: var(--mint);
+
+	--nav-item-background-hover: color-mix(
+		in srgb,
+		var(--mint) var(--bg-contrast-amount),
+		transparent
+	);
+
+	--background-modifier-border-focus: color-mix(in srgb, var(--mint) 60%, transparent);
+
+	--nav-collapse-icon-color: color-mix(in srgb, var(--mint) 40%, transparent);
+}
+
+/* customizing hover state of folder */
+.nav-folder-title[data-path^="X0"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--mint) 60%,
+    var(--contrast-color)
+  );
+}
+
+/* customizing children folders */
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="X0"]){
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--mint) var(--medium-contrast-amount),
+    transparent
+  );
+}
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="X0"]) .nav-folder-title {
+  color: color-mix(
+    in srgb,
+    var(--mint),
+    var(--default-text-color)
+  );
+
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--mint) 7%,
+    transparent
+  );
+
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--mint) 40%,
+    transparent
+  );
+
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--mint) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+
+/* ------------------------------- 01 Prefix -------------------------------- */
+.nav-folder-title[data-path^="01"] {
+  color: var(--cyan);
+
+  --nav-item-color-hover: var(--cyan);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--cyan) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cyan) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, transparent);
+}
+.nav-folder-title[data-path^="01"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cyan) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--cyan) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="01"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--cyan) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--cyan) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cyan) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--cyan) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+
+/* ------------------------------- 02 Prefix -------------------------------- */
+.nav-folder-title[data-path^="02"] {
+  color: var(--light-blue);
+  --nav-item-color-hover: var(--light-blue);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--light-blue) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--light-blue) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--light-blue) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="02"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--light-blue) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--light-blue) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="02"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--light-blue) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--light-blue) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--light-blue) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--light-blue) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- 03 Prefix -------------------------------- */
+.nav-folder-title[data-path^="03"] {
+  color: var(--blue);
+  --nav-item-color-hover: var(--blue);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--blue) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--blue) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, transparent);
+}
+.nav-folder-title[data-path^="03"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--blue) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--blue) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="03"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--blue) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--blue) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--blue) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--blue) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- 04 Prefix -------------------------------- */
+.nav-folder-title[data-path^="04"] {
+  color: var(--violet);
+  --nav-item-color-hover: var(--violet);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--violet) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--violet) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--violet) 60%, transparent);
+}
+.nav-folder-title[data-path^="04"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--violet) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--violet) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="04"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--violet) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--violet) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--violet) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--violet) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- 05 Prefix -------------------------------- */
+.nav-folder-title[data-path^="05"] {
+  color: var(--purple);
+  --nav-item-color-hover: var(--purple);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--purple) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--purple) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--purple) 60%, transparent);
+}
+.nav-folder-title[data-path^="05"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--purple) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--purple) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="05"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--purple) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--purple) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--purple) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--purple) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- 06 Prefix -------------------------------- */
+.nav-folder-title[data-path^="06"] {
+  color: var(--magenta);
+  --nav-item-color-hover: var(--magenta);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--magenta) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--magenta) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--magenta) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="06"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--magenta) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--magenta) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="06"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--magenta) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--magenta) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--magenta) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--magenta) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- 07 Prefix -------------------------------- */
+.nav-folder-title[data-path^="07"] {
+  color: var(--hot-red);
+  --nav-item-color-hover: var(--hot-red);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--hot-red) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--hot-red) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--hot-red) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="07"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--hot-red) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--hot-red) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="07"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--hot-red) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--hot-red) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--hot-red) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--hot-red) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Trash Prefix -------------------------------- */
+.nav-folder-title[data-path^="XD"] {
+  color: var(--timberwolf);
+  --nav-item-color-hover: var(--timberwolf);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--timberwolf) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--timberwolf) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--timberwolf) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="XD"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--timberwolf) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="XD"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--timberwolf) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="XD"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--timberwolf) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--timberwolf) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--timberwolf) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--timberwolf) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+
+
+/* --------------------- Excalidraw / tldraw Prefix ----------------------- */
+
+.nav-folder-title[data-path^="Excalidraw"],
+.nav-folder-title[data-path^="tldraw"] {
+  color: var(--coral);
+  --nav-item-color-hover: var(--coral);
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--coral) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--coral) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--coral) 60%,
+    transparent
+  );
+}
+  
+.nav-folder-title[data-path^="Excalidraw"]:hover, .nav-folder-title[data-path^="tldraw"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--coral) 60%,
+    var(--contrast-color)
+  );
+}
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Excalidraw"]), .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="tldraw"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--coral) var(--medium-contrast-amount),
+    transparent
+  );
+}
+
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Excalidraw"])
+  .nav-file-title, .tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="tldraw"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--coral) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--coral) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--coral) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--coral) var(--active-contrast-amount),
+    transparent
+  );
+}
