@@ -10,12 +10,39 @@ Designed with **Live Preview** in mind, it brings a playful but professional vib
 
 <br/>
 
+## Index
+
+-   [License](#_-license)
+-   [Discord Community Joining Link](#discord-community)
+-   [Discussions Panel](#discussions-panel)
+-   [Credits](#credits)
+-   [Recommended Community Plugins](#recommended-community-plugins)
+
 ## <@\_@> License
 
 Licensed under **AGPL-3.0**  
 Strictly built for Open-source. **Use, modify, and share freely** — **but** you must also open-source any derivative or hosted usage. Closed source usage is NOT allowed.
 
 <br/>
+
+## Discord Community
+
+We're gonna be improving this consistently, not just the theme, but we'll build a proper kit of toolkits (snippets, plugins, addon software-tools) around the theme & obsidian in general all open-sourced for us all, and will love for you to be a part of our community.
+Right Now, am working alone, but will love for you to contribute.
+
+[CLick me to JOIN Discord Server](https://discord.gg/X2JMNFHz)
+
+#### >>> Discord Perks :
+
+-   exclusive mentions
+-   early access to beta releases
+-   interact 2-way with community in chat channel and VCs (voice & video calls)
+-   ofc make new friends
+
+## Discussions Panel :
+
+-   Also checkou **GitHub Discussions** to share direct feedback, ask questions, and suggest features.
+-   Stay updated on announcements and collaborate to make the theme better together.
 
 ## Credits :
 
@@ -28,7 +55,7 @@ Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
 
 > 2. Then in Obsidian -> settings -> Appearance (scroll-down) -> CSS snippets -> click refresh 🔃 button -> enable "Sidebar Folders Gradient Coloring".
 
-### Recommended Community Plugins -
+## Recommended Community Plugins -
 
 1. Excalidraw / Tldraw
 2. Latex Suite
