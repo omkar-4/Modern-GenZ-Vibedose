@@ -18,6 +18,8 @@ Designed with **Live Preview** in mind, it brings a playful but professional vib
 -   [Credits](#credits)
 -   [Recommended Community Plugins](#recommended-community-plugins)
 
+<br/>
+
 ## <@\_@> License
 
 Licensed under **AGPL-3.0**  
@@ -39,10 +41,14 @@ Right Now, am working alone, but will love for you to contribute.
 -   interact 2-way with community in chat channel and VCs (voice & video calls)
 -   ofc make new friends
 
+<br/>
+
 ## Discussions Panel :
 
 -   Also checkou **GitHub Discussions** to share direct feedback, ask questions, and suggest features.
 -   Stay updated on announcements and collaborate to make the theme better together.
+
+<br/>
 
 ## Credits :
 
@@ -54,6 +60,8 @@ Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
 > 1. To apply snippets - copy snippet "Sidebar Folders Gradient Coloring.css" file from snippets/ folder within this repo and goto `\.obsidian\snippets` location inside your vault folder and paste it.
 
 > 2. Then in Obsidian -> settings -> Appearance (scroll-down) -> CSS snippets -> click refresh 🔃 button -> enable "Sidebar Folders Gradient Coloring".
+
+<br/>
 
 ## Recommended Community Plugins -
 
