@@ -8,6 +8,8 @@ Modern GenZ Vibedose is a curated [Obsidian](https://obsidian.md/) desktop theme
 
 Designed with **Live Preview** in mind, it brings a playful but professional vibe—perfect for students, writers, and digital thinkers.
 
+⭐ **IMPORTANT** : Please go through the [External Snippets](#external-snippets) section for instructions on how to apply folder coloring snippets. It has to be done manually as of now.
+
 <br/>
 
 ## Index
@@ -16,6 +18,7 @@ Designed with **Live Preview** in mind, it brings a playful but professional vib
 -   [Discord Community Joining Link](#discord-community)
 -   [Discussions Panel](#discussions-panel)
 -   [Credits](#credits)
+-   [External Snippets](#external-snippets)
 -   [Recommended Community Plugins](#recommended-community-plugins)
 
 <br/>
@@ -54,12 +57,14 @@ Right Now, am working alone, but will love for you to contribute.
 
 ### External Snippets -
 
-Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
-(used a modified version of above snippet - check snippets folder)
+Original - Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
+(I used a modified version of above snippet - check snippets folder)
 
-> 1. To apply snippets - copy snippet "Sidebar Folders Gradient Coloring.css" file from snippets/ folder within this repo and goto `\.obsidian\snippets` location inside your vault folder and paste it.
+- Grab the snippet "Sidebar Folders Gradient Coloring.css" file from my github here : https://github.com/omkar-4/Modern-GenZ-Vibedose/blob/main/snippets/Sidebar%20Folders%20Gradient%20Coloring.css
 
-> 2. Then in Obsidian -> settings -> Appearance (scroll-down) -> CSS snippets -> click refresh 🔃 button -> enable "Sidebar Folders Gradient Coloring".
+- 1. To apply snippets - download and copy snippet "Sidebar Folders Gradient Coloring.css" file from snippets/ folder within my repo and goto `\.obsidian\snippets` location inside your vault folder and paste it.
+
+- 2. Then in Obsidian -> settings -> Appearance (scroll-down) -> CSS snippets -> click refresh 🔃 button -> enable "Sidebar Folders Gradient Coloring".
 
 <br/>
 
