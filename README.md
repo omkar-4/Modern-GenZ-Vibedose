@@ -35,7 +35,7 @@ Strictly built for Open-source. **Use, modify, and share freely** — **but** yo
 We're gonna be improving this consistently, not just the theme, but we'll build a proper kit of toolkits (snippets, plugins, addon software-tools) around the theme & obsidian in general all open-sourced for us all, and will love for you to be a part of our community.
 Right Now, am working alone, but will love for you to contribute.
 
-[CLick me to JOIN Discord Server](https://discord.gg/X2JMNFHz)
+[CLick me to JOIN Discord Server](https://discord.gg/NE5THYBfjn)
 
 #### >>> Discord Perks :
 
