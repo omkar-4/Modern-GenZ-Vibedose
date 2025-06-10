@@ -71,7 +71,7 @@ body {
 	--background-secondary: #101010;
 
 	--ribbon-background: var(--background-secondary);
-	--divider-color: #1a1a1a;
+	--divider-color: #292929;
 	--status-bar-background: var(--background-secondary);
 	--titlebar-background: var(--background-secondary);
 	--titlebar-background-focused: var(--background-secondary);
@@ -158,6 +158,16 @@ svg * {
 
 .workspace-tab-header {
 	border-radius: 8px 8px 0px 0px;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+	margin-top: 2px;
+	background-color: #212121;
+	border-bottom: var(--light-blue) 2px solid;
+}
+
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
+	background-color: #181818;
 }
 
 .side-dock-actions,
