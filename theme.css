@@ -214,9 +214,10 @@ button {
 	margin: 0px 32px 0px 0px;
 }
 
-.cm-s-obsidian .cm-line.HyperMD-header {
-	padding-top: var(--p-spacing);
-	padding-bottom: var(--p-spacing);
+.cm-s-obsidian .cm-line.HyperMD-header::before {
+  content: '';
+  display: block;
+  height: var(--p-spacing);
 }
 
 .cm-formatting-list {
