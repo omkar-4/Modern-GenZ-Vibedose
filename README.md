@@ -16,7 +16,7 @@ Designed with **Live Preview** in mind, it brings a playful but professional vib
 
 ## Index
 
--   [License](#_-license)
+-   [License](#license)
 -   [Discord Community Joining Link](#discord-community)
 -   [Discussions Panel](#discussions-panel)
 -   [Credits](#credits)
@@ -25,8 +25,9 @@ Designed with **Live Preview** in mind, it brings a playful but professional vib
 
 <br/>
 
-## <@\_@> License
+## License
 
+<@\_@>
 Licensed under **AGPL-3.0**  
 Strictly built for Open-source. **Use, modify, and share freely** — **but** you must also open-source any derivative or hosted usage. Closed source usage is NOT allowed.
 
@@ -48,16 +49,16 @@ Right Now, am working alone, but will love for you to contribute.
 
 <br/>
 
-## Discussions Panel :
+## Discussions Panel
 
 -   Also checkou **GitHub Discussions** to share direct feedback, ask questions, and suggest features.
 -   Stay updated on announcements and collaborate to make the theme better together.
 
 <br/>
 
-## Credits :
+## Credits
 
-### External Snippets -
+### External Snippets
 
 Original - Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
 (I used a modified version of above snippet - check snippets folder)
@@ -70,7 +71,7 @@ Original - Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
 
 <br/>
 
-## Recommended Community Plugins -
+## Recommended Community Plugins
 
 1. Excalidraw / Tldraw
 2. Latex Suite
