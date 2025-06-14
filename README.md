@@ -4,6 +4,8 @@
 
 # ~(￣ ▽ ￣)~ **Modern GenZ Vibedose – Obsidian Theme**
 
+Yo, first join out discord XD : here - [CLick me to JOIN Discord Server](https://discord.gg/NE5THYBfjn)
+
 Modern GenZ Vibedose is a curated [Obsidian](https://obsidian.md/) desktop theme built for you guys who want a clean, modern yet expressive environment for thinking and writing.
 
 Designed with **Live Preview** in mind, it brings a playful but professional vibe—perfect for students, writers, and digital thinkers.
