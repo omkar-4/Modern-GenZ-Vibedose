@@ -77,7 +77,7 @@ body {
 	--titlebar-background-focused: var(--background-secondary);
 
 	.hr hr {
-		background-color: #171717;
+		background-color: #444a4f;
 	}
 
 	.cm-s-obsidian span.cm-highlight,
@@ -146,6 +146,10 @@ body {
 	.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
 		background-color: #f5f5f5;
 	}
+}
+
+.markdown-source-view.mod-cm6 .cm-content > * {
+	padding-bottom: 0.5rem !important;
 }
 
 .workspace-tab-header.is-active::before,
