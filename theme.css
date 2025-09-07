@@ -68,7 +68,7 @@ body {
 
 	--text-highlight-bg: dodgerblue;
 	--background-primary: var(--background-secondary);
-	--background-secondary: #101010;
+	--background-secondary: #151515;
 
 	--ribbon-background: var(--background-secondary);
 	--divider-color: #292929;
@@ -148,10 +148,6 @@ body {
 	}
 }
 
-.markdown-source-view.mod-cm6 .cm-content > * {
-	padding-bottom: 0.5rem !important;
-}
-
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
 	display: none;
@@ -201,7 +197,7 @@ svg * {
 }
 
 .titlebar-button {
-	border-radius: 16px;
+	border-radius: 8px;
 }
 
 .dropdown,
@@ -238,15 +234,8 @@ button {
 	margin: 0px 32px 0px 0px;
 }
 
-.cm-s-obsidian .cm-line.HyperMD-header::before {
-	content: "";
-	display: block;
-	height: var(--p-spacing);
-}
-
 .cm-formatting-list {
 	margin: 0px;
-	padding: 0px 8px 0px 8px;
 }
 
 .hr hr {
@@ -286,4 +275,12 @@ thead {
 /* Bold+Italic combined */
 .cm-strong.cm-em {
 	color: #ff7700 !important; /* distinct color for bold+italic */
+}
+
+.cm-editor{
+	margin-top: 64px;
+}
+
+.inline-title{
+	margin-bottom: 16px;
 }
