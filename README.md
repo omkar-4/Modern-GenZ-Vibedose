@@ -4,6 +4,8 @@
 
 # ~(￣ ▽ ￣)~ **Modern GenZ Vibedose – Obsidian Theme**
 
+⭐ IMPORTANT : Please checkout Custom snippets section below to enable more features
+
 Yo, first join out discord XD : here - [CLick me to JOIN Discord Server](https://discord.gg/NE5THYBfjn)
 
 Modern GenZ Vibedose is a curated [Obsidian](https://obsidian.md/) desktop theme built for you guys who want a clean, modern yet expressive environment for thinking and writing.
@@ -16,12 +18,12 @@ Designed with **Live Preview** in mind, it brings a playful but professional vib
 
 ## Index
 
--   [License](#license)
--   [Discord Community Joining Link](#discord-community)
--   [Discussions Panel](#discussions-panel)
--   [Credits](#credits)
--   [External Snippets](#external-snippets)
--   [Recommended Community Plugins](#recommended-community-plugins)
+- [License](#license)
+- [Discord Community Joining Link](#discord-community)
+- [Discussions Panel](#discussions-panel)
+- [Credits](#credits)
+- [External Snippets](#external-snippets)
+- [Recommended Community Plugins](#recommended-community-plugins)
 
 <br/>
 
@@ -42,17 +44,17 @@ Right Now, am working alone, but will love for you to contribute.
 
 #### >>> Discord Perks :
 
--   exclusive mentions
--   early access to beta releases
--   interact 2-way with community in chat channel and VCs (voice & video calls)
--   ofc make new friends
+- exclusive mentions
+- early access to beta releases
+- interact 2-way with community in chat channel and VCs (voice & video calls)
+- ofc make new friends
 
 <br/>
 
 ## Discussions Panel
 
--   Also checkou **GitHub Discussions** to share direct feedback, ask questions, and suggest features.
--   Stay updated on announcements and collaborate to make the theme better together.
+- Also checkou **GitHub Discussions** to share direct feedback, ask questions, and suggest features.
+- Stay updated on announcements and collaborate to make the theme better together.
 
 <br/>
 
@@ -65,9 +67,18 @@ Original - Colored Sidebar Snippet: https://github.com/CyanVoxel/Obsidian...
 
 - Grab the snippet "Sidebar Folders Gradient Coloring.css" file from my github here : https://github.com/omkar-4/Modern-GenZ-Vibedose/blob/main/snippets/Sidebar%20Folders%20Gradient%20Coloring.css
 
-- 1. To apply snippets - download and copy snippet "Sidebar Folders Gradient Coloring.css" file from snippets/ folder within my repo and goto `\.obsidian\snippets` location inside your vault folder and paste it.
+-   1. To apply snippets - download and copy snippet "Sidebar Folders Gradient Coloring.css" file from snippets/ folder within my repo and goto `\.obsidian\snippets` location inside your vault folder and paste it.
 
-- 2. Then in Obsidian -> settings -> Appearance (scroll-down) -> CSS snippets -> click refresh 🔃 button -> enable "Sidebar Folders Gradient Coloring".
+-   2. Then in Obsidian -> settings -> Appearance (scroll-down) -> CSS snippets -> click refresh 🔃 button -> enable "Sidebar Folders Gradient Coloring".
+
+-   3. It is important that you using this standard naming convention, only then it will work.
+    - Name your folders like this (all folders must be at root position, which means not inside any folder or subfolder, If your main obsidian folder is `Obsdian Vault` then these must be directly inside it which is `Obsidian Vault` > `01 - Foldername`):
+        - `01 - Foldername`
+        - `02 - Foldername`
+        - ... so on till 07 you can go
+        - If you use excalidraw or tldraw or both and wanna use dedicated folders for their files
+            - name their folder in root directory position exactly as `Excalidraw` and `TLDraw` to get colors on them
+            - If you want misc folder use `XO Foldername`, I personally use `X0 MISCELLANEOUS`
 
 <br/>
 
